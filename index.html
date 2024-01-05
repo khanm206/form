@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educrescent</title>
+    <style>
+        body{
+            background-color:rgba(2, 138, 242, 0.107);
+        }
+       
+       h1{
+        text-align: center;
+       }
+        section{
+            position: absolute;
+            left: 37.5%;
+            /* text-align: center; */
+            width: fit-content;
+            padding: 2% 5% 5%;
+            background: linear-gradient( 150deg, lightblue, rgb(95, 95, 216));
+            border-radius: 15px;
+        }
+        label{ 
+            display: block;
+            margin-bottom: 2%;
+            padding: 5px;
+        }
+        .courses{
+            display: inline-block;
+        }
+        #bachelor{
+            margin-right: 25px;
+        }
+        .alcrs{
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        /* .field1{width: fit-content;} */fieldset{
+            width: fit-content;
+        }
+        legend{
+            text-align: center;
+        }
+        textarea{
+            /* width: 95%; */
+            margin-right: 5%;
+        }
+        .end{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+        <h1>Please fill up the from</h1>
+        <form action="mailto:moinkhan1119rja@gmail.com" method="get">
+            <label for="name">Your Name:
+                <input type="text" placeholder="Full Name">
+            </label>
+            <label for="email"> Your Email:
+                <input type="email" placeholder="Email Address">
+            </label>
+            <label for="phone">Your phone:
+                <input type="number" placeholder="Phone Number">
+            </label>
+            <label for="dob"> Your Date of Birth:
+                <input type="date">
+            </label><br>
+            <fieldset>
+                <legend>Select your English language test(s)</legend>
+                <label for="ielts">
+                    <input type="checkbox" id="ielts">IELTS
+                </label>
+                <label for="oietc">
+                    <input type="checkbox" id="oietc">OIETC
+                </label>
+                <label for="doulingo">
+                    <input type="checkbox" id="doulingo">Doulingo
+                </label>
+            </fieldset><br>
+            <label class="certificate" for="lngcertificate"> Upload test certificate(s) <br>
+                <input type="file" id="lngcertificate">
+            </label><br>
+            <fieldset class="field1">
+                <legend>
+                    Select your degree(s)
+                </legend>
+                <label for="bachelor" class="courses" id="bachelor">Undergraduate
+                <label for="bsc" class="alcrs">
+                    <input type="radio" name="bachelors" id="bsc">BSC
+                </label>
+                <label for="bba" class="alcrs">
+                    <input type="radio" name="bachelors" id="bba">BBA
+                </label>
+                <label for="ba" class="alcrs">
+                    <input type="radio" name="bachelors" id="ba">BA
+                </label>
+            </label>
+            <label for="masters" class="courses"> Postgraduate
+                <label for="msc" class="alcrs">
+                    <input type="radio" name="masters" id="msc">MSC
+                </label>
+                <label for="mba" class="alcrs">
+                    <input type="radio" name="masters" id="mba">MBA
+                </label>
+                <label for="ma" class="alcrs">
+                    <input type="radio" name="masters" id="ma">MA
+                </label>
+            </label>
+            </fieldset><br>
+            <label class="certificate" for="dgcertificate"> Upload degree certificate(s) <br>
+                <input type="file" id="dgcertificate">
+            </label><br>
+            <fieldset>
+                <legend>Add more information</legend>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset><br>
+            <input class="end" type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>
